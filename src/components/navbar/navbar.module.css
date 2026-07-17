@@ -1,0 +1,88 @@
+:root {
+  --navbar-color: rgb(52, 52, 52);
+  --heigth: 80px;
+  --border-pixel: 1px;
+  --hover-color: rgb(180, 180, 180);
+}
+
+nav {
+  background-color: var(--navbar-color);
+  width: 90vw;
+  height: var(--heigth);
+  border-radius: 50px;
+
+  position: fixed;
+
+  display: flex;
+  justify-content: space-between;
+  place-self: center;
+  margin-top: calc(var(--heigth) + var(--border-pixel));
+
+  border: var(--border-pixel) solid red;
+}
+
+.brandImage {
+  color: white;
+  margin-left: 20px;
+}
+
+nav input[type="search"] {
+  height: 40px;
+  width: 300px;
+  border-radius: 50px;
+  background: transparent;
+  border-color: red;
+  color: white;
+}
+
+nav input[type="search"]::placeholder {
+  color: white;
+  padding: 15px;
+}
+
+.navbarActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.navbarActionsInputSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.navbarActionsInputSearch button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid red;
+}
+
+.navbarActionSearchBar {
+  color: white;
+  position: absolute;
+  margin-left: 250px;
+
+  transition: 500ms;
+}
+
+.navbarActionSearchBar:hover {
+  color: var(--hover-color);
+}
+
+.navbarActionShopping {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  transition: 500ms;
+}
+
+.navbarActionShopping:hover {
+  color: var(--hover-color);
+  transform: translateY(-4px);
+}
