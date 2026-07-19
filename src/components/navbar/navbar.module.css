@@ -7,18 +7,16 @@
 
 nav {
   background-color: var(--navbar-color);
-  width: 90vw;
+  width: calc(100vw - 2px);
   height: var(--heigth);
-  border-radius: 50px;
 
   position: fixed;
 
   display: flex;
   justify-content: space-between;
-  place-self: center;
-  margin-top: calc(var(--heigth) + var(--border-pixel));
 
-  border: var(--border-pixel) solid red;
+  border-bottom: var(--border-pixel) solid red;
+  border-top: var(--border-pixel) solid red;
 }
 
 .brandImage {
@@ -78,6 +76,7 @@ nav input[type="search"]::placeholder {
   color: white;
   border: none;
   cursor: pointer;
+  display: grid;
 
   transition: 500ms;
 }
@@ -85,4 +84,29 @@ nav input[type="search"]::placeholder {
 .navbarActionShopping:hover {
   color: var(--hover-color);
   transform: translateY(-4px);
+}
+
+.navbarActionsProducts {
+  color: white;
+  margin-right: 100px;
+  font-size: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: 500ms;
+}
+
+.navbarActionsProducts:hover {
+  color: var(--hover-color);
+  transform: translateY(-4px);
+}
+
+.dumbellIcon {
+  transition: 600ms;
+}
+
+.navbarActionsProducts:hover .dumbellIcon {
+  transform: rotate(225deg);
 }

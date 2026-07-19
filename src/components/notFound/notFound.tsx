@@ -6,6 +6,8 @@ export default function SPA() {
 
   useEffect(() => {
     navigate("/404");
+
+    document.title = "Página Não Encontrada";
   });
 
   return (
