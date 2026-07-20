@@ -1,5 +1,9 @@
 import { useEffect } from "react";
 
+import styles from "./shop.module.css";
+
+import Navbar from "../navbar/navbar";
+
 export default function Shop() {
   useEffect(() => {
     document.title = "Carrinho";
@@ -7,7 +11,13 @@ export default function Shop() {
 
   return (
     <div className="shop">
-      <h1>carrinho</h1>
+      <div className="wrapper">
+        <Navbar />
+      </div>
+
+      <div className={styles.shopping}>
+        <h1>CARRINHO</h1>
+      </div>
     </div>
   );
 }

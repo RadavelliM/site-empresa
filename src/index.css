@@ -15,3 +15,8 @@ body {
 a {
   text-decoration: none;
 }
+
+.wrapper {
+  margin-bottom: 150px;
+  display: flex;
+}
