@@ -1,0 +1,36 @@
+.NumberCall {
+  background-color: rgb(12, 203, 12);
+  color: white;
+
+  height: 50px;
+  width: 380px;
+  border-radius: 50px;
+  border: 5px solid rgb(0, 75, 0);
+  font-size: 22px;
+
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 90%;
+  right: 1%;
+
+  transition: 700ms;
+}
+
+.NumberCall span {
+  transition: 700ms;
+}
+
+.NumberCall:hover {
+  transform: translateY(-10px);
+}
+
+.NumberCall:hover span {
+  color: rgb(109, 109, 109);
+}
+
+.WhatsappIcon {
+  margin-right: 40px;
+}

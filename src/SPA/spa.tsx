@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 import Navbar from "../components/navbar/navbar";
+import NumberCall from "../ui/calls/callToActionNumber/callToActionNumber";
 
 export default function SPA() {
   useEffect(() => {
@@ -10,6 +11,8 @@ export default function SPA() {
   return (
     <main>
       <Navbar />
+
+      <NumberCall />
     </main>
   );
 }
