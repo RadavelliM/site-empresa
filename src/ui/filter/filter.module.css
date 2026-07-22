@@ -1,0 +1,37 @@
+.filterNav {
+  margin-top: 80px;
+  height: 30px;
+  background-color: var(--navbar-color);
+  width: calc(100vw - 2px);
+
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 220px;
+
+  border-bottom: var(--border-pixel) solid rgb(200, 0, 0);
+  border-top: var(--border-pixel) solid rgb(200, 0, 0);
+
+  transition: 250ms;
+}
+
+.filterOptions {
+  color: white;
+}
+
+.filterNav button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+
+  transition: 500ms;
+}
+
+.filterNav button:hover {
+  transform: translateY(-2px);
+  color: var(--hover-color);
+}

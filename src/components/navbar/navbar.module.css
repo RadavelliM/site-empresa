@@ -5,7 +5,7 @@
   --hover-color: rgb(180, 180, 180);
 }
 
-nav {
+.navbar {
   background-color: var(--navbar-color);
   width: calc(100vw - 2px);
   height: var(--heigth);
@@ -21,7 +21,7 @@ nav {
   transition: 250ms;
 }
 
-nav:hover {
+.navbar:hover {
   border-bottom: var(--border-pixel) solid red;
   border-top: var(--border-pixel) solid red;
 }
@@ -31,7 +31,7 @@ nav:hover {
   margin-left: 20px;
 }
 
-nav input[type="search"] {
+.navbar input[type="search"] {
   height: 40px;
   width: 300px;
   border-radius: 50px;
@@ -40,7 +40,7 @@ nav input[type="search"] {
   color: white;
 }
 
-nav input[type="search"]::placeholder {
+.navbar input[type="search"]::placeholder {
   color: white;
   padding: 15px;
 }
